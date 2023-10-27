@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./index.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script> 
     <title>Job Filter</title>
 </head>
 <body>
@@ -21,7 +23,7 @@
                     </div>
                 </template>
             </div>
-            <div class="clear">Clear</div>
+            <div class="clear" onclick="clearFilters()">Clear</div>
         </div>
     </dix>
 
@@ -40,12 +42,13 @@
                     <div class="additional-info">1d ago  •  Full Time  •  USA only</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="frontend filter-tablet">Frontend</div>
-                <div class="senior filter-tablet">Senior</div>
-                <div class="html filter-tablet">HTML</div>
-                <div class="css filter-tablet">CSS</div>
-                <div class="javascript filter-tablet">Javascript</div>
+                <div class="Frontend filter-tablet">Frontend</div>
+                <div class="Senior filter-tablet">Senior</div>
+                <div class="HTML filter-tablet">HTML</div>
+                <div class="CSS filter-tablet">CSS</div>
+                <div class="Javascript filter-tablet">Javascript</div>
             </div>
         </div>
 
@@ -62,11 +65,12 @@
                     <div class="additional-info">1d ago  •  Part Time  •  Remote</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="fullstack filter-tablet">Fullsatck</div>
-                <div class="midweight filter-tablet">Midweight</div>
-                <div class="python filter-tablet">Python</div>
-                <div class="react filter-tablet">React</div>
+                <div class="Fullstack filter-tablet">Fullstack</div>
+                <div class="Midweight filter-tablet">Midweight</div>
+                <div class="Python filter-tablet">Python</div>
+                <div class="React filter-tablet">React</div>
             </div>
         </div>
 
@@ -82,12 +86,13 @@
                     <div class="additional-info">2d ago  •  Part Time  •  USA only</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="frontend filter-tablet">Frontend</div>
-                <div class="junior filter-tablet">Junior</div>
-                <div class="react filter-tablet">React</div>
-                <div class="saas filter-tablet">Saas</div>
-                <div class="javascript filter-tablet">Javascript</div>
+                <div class="Frontend filter-tablet">Frontend</div>
+                <div class="Junior filter-tablet">Junior</div>
+                <div class="React filter-tablet">React</div>
+                <div class="Saas filter-tablet">Saas</div>
+                <div class="Javascript filter-tablet">Javascript</div>
             </div>
         </div>
 
@@ -102,11 +107,12 @@
                     <div class="additional-info">5d ago  •  Contract  •  USA only</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="frontend filter-tablet">Frontend</div>
-                <div class="junior filter-tablet">Junior</div>
-                <div class="css filter-tablet">CSS</div>
-                <div class="javascript filter-tablet">Javascript</div>
+                <div class="Frontend filter-tablet">Frontend</div>
+                <div class="Junior filter-tablet">Junior</div>
+                <div class="CSS filter-tablet">CSS</div>
+                <div class="Javascript filter-tablet">Javascript</div>
             </div>
         </div>
 
@@ -121,12 +127,13 @@
                     <div class="additional-info">1w ago  •  Full Time  •  Worldwide</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="fullstack filter-tablet">Fullsatck</div>
-                <div class="midweight filter-tablet">Midweight</div>
-                <div class="javascript filter-tablet">Javascript</div>
-                <div class="saas filter-tablet">Saas</div>
-                <div class="ruby filter-tablet">Ruby</div>
+                <div class="Fullstack filter-tablet">Fullsatck</div>
+                <div class="Midweight filter-tablet">Midweight</div>
+                <div class="Javascript filter-tablet">Javascript</div>
+                <div class="Saas filter-tablet">Saas</div>
+                <div class="Ruby filter-tablet">Ruby</div>
             </div>
         </div>
 
@@ -141,11 +148,12 @@
                     <div class="additional-info">2d ago  •  FullTime  •  UK only</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="backend filter-tablet">Backend</div>
-                <div class="junior filter-tablet">Junior</div>
-                <div class="ruby filter-tablet">Ruby</div>
-                <div class="ror filter-tablet">Ror</div>
+                <div class="Backend filter-tablet">Backend</div>
+                <div class="Junior filter-tablet">Junior</div>
+                <div class="Ruby filter-tablet">Ruby</div>
+                <div class="Ror filter-tablet">Ror</div>
             </div>
         </div>
 
@@ -160,12 +168,13 @@
                     <div class="additional-info">2w ago  •  FullTime  •  Worldwide</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="frontend filter-tablet">Frontend</div>
-                <div class="junior filter-tablet">Junior</div>
-                <div class="html filter-tablet">HTML</div>
-                <div class="saas filter-tablet">Saas</div>
-                <div class="javascript filter-tablet">Javascript</div>
+                <div class="Frontend filter-tablet">Frontend</div>
+                <div class="Junior filter-tablet">Junior</div>
+                <div class="HTML filter-tablet">HTML</div>
+                <div class="Saas filter-tablet">Saas</div>
+                <div class="Javascript filter-tablet">Javascript</div>
             </div>
         </div>
 
@@ -180,12 +189,13 @@
                     <div class="additional-info">2w ago  •  FullTime  •  USA only</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="frontend filter-tablet">Frontend</div>
-                <div class="junior filter-tablet">Junior</div>
-                <div class="vue filter-tablet">Vue</div>
-                <div class="javascript filter-tablet">Javascript</div>
-                <div class="saas filter-tablet">Saas</div>
+                <div class="Frontend filter-tablet">Frontend</div>
+                <div class="Junior filter-tablet">Junior</div>
+                <div class="Vue filter-tablet">Vue</div>
+                <div class="Javascript filter-tablet">Javascript</div>
+                <div class="Saas filter-tablet">Saas</div>
             </div>
         </div>
 
@@ -200,12 +210,13 @@
                     <div class="additional-info">3w ago  •  Full  Time  •  Worldwide</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="fullstack filter-tablet">Fullstack</div>
-                <div class="midweight filter-tablet">Midweight</div>
-                <div class="javascript filter-tablet">Javascript</div>
-                <div class="django filter-tablet">Django</div>
-                <div class="python filter-tablet">Python</div>
+                <div class="Fullstack filter-tablet">Fullstack</div>
+                <div class="Midweight filter-tablet">Midweight</div>
+                <div class="Javascript filter-tablet">Javascript</div>
+                <div class="Django filter-tablet">Django</div>
+                <div class="Python filter-tablet">Python</div>
             </div>
         </div>
 
@@ -220,12 +231,13 @@
                     <div class="additional-info">1mo ago  •  Part Time  •  Worldwide</div>
                 </div>
             </div>
+            <hr class="line">
             <div class="job-tags">
-                <div class="frontend filter-tablet">Frontend</div>
-                <div class="junior filter-tablet">Junior</div>
-                <div class="react filter-tablet">React</div>
-                <div class="css filter-tablet">CSS</div>
-                <div class="javascript filter-tablet">Javascript</div>
+                <div class="Frontend filter-tablet">Frontend</div>
+                <div class="Junior filter-tablet">Junior</div>
+                <div class="React filter-tablet">React</div>
+                <div class="CSS filter-tablet">CSS</div>
+                <div class="Javascript filter-tablet">Javascript</div>
             </div>
         </div>
 
@@ -233,6 +245,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./script.js"></script> 
+    <link href="./index.css" rel="stylesheet">
 
 </body>
 </html>
