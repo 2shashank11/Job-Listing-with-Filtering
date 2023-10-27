@@ -4,15 +4,15 @@ var closebtn= document.querySelectorAll(".close");
 var allRoles = ['Frontend', 'Senior', 'HTML', 'CSS', 'Javascript', 'React', 'Python', 'Midweight', 'Fullsatck', 'Junior', 'Saas', 'Ruby', 'Ror', 'Backend'];
 
 //document.getElementsByClassName("tags-head").style.display="none";
+filterList=[];
 
 $(".filter-tablet").on('click', function () {
     //document.getElementsByClassName("tags-head").style.display="block";
-    filterList=[];
+    //filterList=[];
     var tagTemplate = document.getElementById("template-node");
     const cloneElm = tagTemplate.content.cloneNode(true);
 
     if (filterList.indexOf(this.innerHTML)==-1){
-        
         appendFilterTags(cloneElm, this.innerHTML);
         closebtn= document.querySelectorAll(".close");
         console.log(closebtn);
@@ -37,6 +37,7 @@ function clearFilters(){
     
         filterList=allRoles;
         updateCards();
+        filterList=[];
 
         //document.getElementsByClassName("tags-head").style.display="hidden";
 }
@@ -48,6 +49,7 @@ function appendFilterTags(cloneElm, tagName){
     cloneElm.querySelector(".close").innerHTML='✕';
     document.querySelector('.tags').appendChild(cloneElm);
     filterList.push(tagName);
+    updateCards();
 }
 
 function removeFilterTags(){
@@ -64,12 +66,15 @@ function removeFilterTags(){
                 filterList.splice(index, 1);
             }
 
+            updateCards();
+            
             if(filterList.length===0){
                 filterList=allRoles;
+                updateCards();
+                filterList=[];
                 //document.getElementsByClassName("tags-head").style.display="hidden";
             }
             
-            updateCards();
         })
     }
 }
