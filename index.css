@@ -1,11 +1,3 @@
-abc{
-    color: hsl(180, 14%, 20%);
-    color: hsl(180, 8%, 52%);
-    color: hsl(180, 31%, 95%);
-    color: hsl(180, 29%, 50%);
-    color: hsl(180, 52%, 96%);
-}
-
 body{
     margin-left: 0px;
     margin-top: 0px;
@@ -67,7 +59,7 @@ body{
     justify-content: left;
     align-items: center;
     padding: 0.5rem;
-    font-size: 1rem;
+    
     font-weight: 700;
 }
 
@@ -143,7 +135,9 @@ body{
 .profile-pic > img{
     width: 5rem;
     border-radius: 50%;
+    
 }
+
 
 .company-header{
     display: flex;
@@ -211,4 +205,49 @@ body{
 .filter-tablet:hover{
     background-color: hsl(180, 29%, 50%);
     color: hsl(180, 52%, 96%);
+}
+
+.line{
+    display: none;
+}
+
+@media(max-width: 775px){
+
+    .job-list{
+        gap: 3rem;
+        padding-bottom: 50px;
+        
+    }
+
+    .company-header{
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+    }
+
+    .company-name, .new, .featured{
+        margin-bottom: -0.6rem;
+    }
+
+    .job-card{
+        display: block;
+    }
+
+    .job-detail{
+        display: block;
+        max-width: 100%;
+        transform: translateY(-3rem);
+        margin-bottom: -2rem;
+    }
+
+    .profile-pic{
+        margin-bottom: 1rem;
+    }
+
+    .line{
+        width: 95%;
+        display: block;
+        margin-bottom: 1.3rem;
+        color: hsl(180, 14%, 20%);
+    }
+    
 }
